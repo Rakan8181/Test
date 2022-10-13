@@ -21,12 +21,12 @@ namespace Test
             int remainder = 0;
             string binary_num = null;
             string reverse_binary_num = null;
-            do
+            while (result != 0)
             {
                 remainder = result % 2;
                 result = result / 2;
                 binary_num += remainder;
-            } while (result != 0);
+            }
             for (int i = binary_num.Length - 1; i > -1; i--)
             {
                 reverse_binary_num += binary_num[i];
